@@ -1,0 +1,224 @@
+[debug] [2024-07-18T06:14:00.585Z] ----------------------------------------------------------------------
+[debug] [2024-07-18T06:14:00.589Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init --debug
+[debug] [2024-07-18T06:14:00.589Z] CLI Version:   13.0.0
+[debug] [2024-07-18T06:14:00.589Z] Platform:      win32
+[debug] [2024-07-18T06:14:00.590Z] Node Version:  v20.10.0
+[debug] [2024-07-18T06:14:00.590Z] Time:          Thu Jul 18 2024 08:14:00 GMT+0200 (Central European Summer Time)
+[debug] [2024-07-18T06:14:00.590Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-18T06:14:00.692Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-18T06:14:00.694Z] > authorizing via signed-in user (ahmedfrancilien@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ahmed\OneDrive\Bureau\Apps\CODE\ReactApp\nextjs-firebase
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-07-18T06:14:15.057Z] Using project from CLI flag: nextjs-test-c0d5b
+[debug] [2024-07-18T06:14:15.060Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-test-c0d5b [none]
+[debug] [2024-07-18T06:14:15.330Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-test-c0d5b 200
+[debug] [2024-07-18T06:14:15.330Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-test-c0d5b {"projectId":"nextjs-test-c0d5b","projectNumber":"624327169259","displayName":"nextjs-test","name":"projects/nextjs-test-c0d5b","resources":{"hostingSite":"nextjs-test-c0d5b"},"state":"ACTIVE","etag":"1_b5ab5706-6296-4a0e-aacf-9bf119e5d21a"}
+[info] i  Using project nextjs-test-c0d5b (nextjs-test) 
+[info] 
+=== Hosting Setup
+[debug] [2024-07-18T06:14:15.341Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-test-c0d5b [none]
+[debug] [2024-07-18T06:14:15.568Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-test-c0d5b 200
+[debug] [2024-07-18T06:14:15.568Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-test-c0d5b {"projectId":"nextjs-test-c0d5b","projectNumber":"624327169259","displayName":"nextjs-test","name":"projects/nextjs-test-c0d5b","resources":{"hostingSite":"nextjs-test-c0d5b"},"state":"ACTIVE","etag":"1_b5ab5706-6296-4a0e-aacf-9bf119e5d21a"}
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] 
+[info] +  Firebase initialization complete! 
+[debug] [2024-07-18T06:15:35.899Z] ----------------------------------------------------------------------
+[debug] [2024-07-18T06:15:35.902Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-07-18T06:15:35.903Z] CLI Version:   13.0.0
+[debug] [2024-07-18T06:15:35.903Z] Platform:      win32
+[debug] [2024-07-18T06:15:35.903Z] Node Version:  v20.10.0
+[debug] [2024-07-18T06:15:35.903Z] Time:          Thu Jul 18 2024 08:15:35 GMT+0200 (Central European Summer Time)
+[debug] [2024-07-18T06:15:35.903Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-18T06:15:36.005Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-18T06:15:36.008Z] > authorizing via signed-in user (ahmedfrancilien@gmail.com)
+[debug] [2024-07-18T06:15:36.008Z] [iam] checking project nextjs-test-c0d5b for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-18T06:15:36.011Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/nextjs-test-c0d5b:testIamPermissions [none]
+[debug] [2024-07-18T06:15:36.011Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/nextjs-test-c0d5b:testIamPermissions x-goog-quota-user=projects/nextjs-test-c0d5b
+[debug] [2024-07-18T06:15:36.012Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nextjs-test-c0d5b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-18T06:15:36.709Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/nextjs-test-c0d5b:testIamPermissions 200
+[debug] [2024-07-18T06:15:36.709Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nextjs-test-c0d5b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-18T06:15:36.711Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-test-c0d5b [none]
+[debug] [2024-07-18T06:15:36.913Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-test-c0d5b 200
+[debug] [2024-07-18T06:15:36.914Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-test-c0d5b {"projectId":"nextjs-test-c0d5b","projectNumber":"624327169259","displayName":"nextjs-test","name":"projects/nextjs-test-c0d5b","resources":{"hostingSite":"nextjs-test-c0d5b"},"state":"ACTIVE","etag":"1_b5ab5706-6296-4a0e-aacf-9bf119e5d21a"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info]   ▲ Next.js 14.2.5
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/5) ...
+
+[info]    Generating static pages (1/5) 
+
+[info]    Generating static pages (2/5) 
+
+[info]    Generating static pages (3/5) 
+
+[info]  ✓ Generating static pages (5/5)
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    5.25 kB        92.3 kB
+└ ○ /_not-found                          871 B          87.9 kB
++ First Load JS shared by all            87 kB
+  ├ chunks/23-b75664ace61c0abb.js        31.5 kB
+  ├ chunks/fd9d1056-2821b0f0cabcd8bd.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+[info] 
+○  (Static)  prerendered as static content
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /_not-found/page
+[info] 
+[debug] [2024-07-18T06:16:30.340Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "europe-west1"
+      },
+      "site": "nextjs-test-c0d5b",
+      "rewrites": [
+        {
+          "source": "/**",
+          "function": {
+            "functionId": "ssrnextjstestc0d5b",
+            "region": "europe-west1",
+            "pinTag": true
+          }
+        }
+      ],
+      "redirects": [],
+      "headers": [
+        {
+          "source": "/favicon.ico",
+          "headers": [
+            {
+              "key": "cache-control",
+              "value": "public, max-age=0, must-revalidate"
+            },
+            {
+              "key": "content-type",
+              "value": "image/x-icon"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "public": ".firebase\\nextjs-test-c0d5b\\hosting",
+      "webFramework": "next_ssr"
+    }
+  ],
+  "functions": [
+    {
+      "source": ".firebase\\nextjs-test-c0d5b\\functions",
+      "codebase": "firebase-frameworks-nextjs-test-c0d5b"
+    }
+  ]
+}
+[debug] [2024-07-18T06:16:30.350Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-18T06:16:30.351Z] > authorizing via signed-in user (ahmedfrancilien@gmail.com)
+[debug] [2024-07-18T06:16:30.352Z] [iam] checking project nextjs-test-c0d5b for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-07-18T06:16:30.353Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/nextjs-test-c0d5b:testIamPermissions [none]
+[debug] [2024-07-18T06:16:30.354Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/nextjs-test-c0d5b:testIamPermissions x-goog-quota-user=projects/nextjs-test-c0d5b
+[debug] [2024-07-18T06:16:30.355Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nextjs-test-c0d5b:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-07-18T06:16:30.944Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/nextjs-test-c0d5b:testIamPermissions 200
+[debug] [2024-07-18T06:16:30.944Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nextjs-test-c0d5b:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[info] 
+[info] === Deploying to 'nextjs-test-c0d5b'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2024-07-18T06:16:30.949Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-test-c0d5b [none]
+[debug] [2024-07-18T06:16:31.188Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-test-c0d5b 200
+[debug] [2024-07-18T06:16:31.189Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-test-c0d5b {"projectId":"nextjs-test-c0d5b","projectNumber":"624327169259","displayName":"nextjs-test","name":"projects/nextjs-test-c0d5b","resources":{"hostingSite":"nextjs-test-c0d5b"},"state":"ACTIVE","etag":"1_b5ab5706-6296-4a0e-aacf-9bf119e5d21a"}
+[info] i  functions: preparing codebase firebase-frameworks-nextjs-test-c0d5b for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-07-18T06:16:31.193Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-07-18T06:16:31.194Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/nextjs-test-c0d5b
+[debug] [2024-07-18T06:16:31.196Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-07-18T06:16:31.196Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/nextjs-test-c0d5b
+[debug] [2024-07-18T06:16:31.198Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/cloudbuild.googleapis.com [none]
+[debug] [2024-07-18T06:16:31.199Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/cloudbuild.googleapis.com x-goog-quota-user=projects/nextjs-test-c0d5b
+[debug] [2024-07-18T06:16:31.201Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/artifactregistry.googleapis.com [none]
+[debug] [2024-07-18T06:16:31.202Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/artifactregistry.googleapis.com x-goog-quota-user=projects/nextjs-test-c0d5b
+[debug] [2024-07-18T06:16:32.015Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/runtimeconfig.googleapis.com 200
+[debug] [2024-07-18T06:16:32.016Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-07-18T06:16:32.021Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/cloudfunctions.googleapis.com 200
+[debug] [2024-07-18T06:16:32.021Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-07-18T06:16:32.036Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/artifactregistry.googleapis.com 200
+[debug] [2024-07-18T06:16:32.036Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/artifactregistry.googleapis.com [omitted]
+[warn] !  artifactregistry: missing required API artifactregistry.googleapis.com. Enabling now... 
+[debug] [2024-07-18T06:16:32.038Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/artifactregistry.googleapis.com:enable [none]
+[debug] [2024-07-18T06:16:32.039Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/artifactregistry.googleapis.com:enable x-goog-quota-user=projects/nextjs-test-c0d5b
+[debug] [2024-07-18T06:16:32.065Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/cloudbuild.googleapis.com 200
+[debug] [2024-07-18T06:16:32.066Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/cloudbuild.googleapis.com [omitted]
+[warn] !  functions: missing required API cloudbuild.googleapis.com. Enabling now... 
+[debug] [2024-07-18T06:16:32.067Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/cloudbuild.googleapis.com:enable [none]
+[debug] [2024-07-18T06:16:32.068Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/cloudbuild.googleapis.com:enable x-goog-quota-user=projects/nextjs-test-c0d5b
+[debug] [2024-07-18T06:16:32.372Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/artifactregistry.googleapis.com:enable 400
+[debug] [2024-07-18T06:16:32.373Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/nextjs-test-c0d5b/services/artifactregistry.googleapis.com:enable [omitted]
+[error] 
+[error] Error: Your project nextjs-test-c0d5b must be on the Blaze (pay-as-you-go) plan to complete this command. Required API artifactregistry.googleapis.com can't be enabled until the upgrade is complete. To upgrade, visit the following URL:
+
+https://console.firebase.google.com/project/nextjs-test-c0d5b/usage/details
